@@ -25,10 +25,10 @@ installable Claude Code plugin, so an environment can pull in just what it
 needs. More plugin directories (e.g. for hooks or MCP configs) can be added
 the same way later without restructuring.
 
-This repo currently ships scaffolding only — the `agents/agents/` and
-`skills/skills/` content directories are empty placeholders. Actual
-subagent and skill content, plus any third-party plugin references, land in
-follow-up revisions.
+`agents/agents/` holds Noah's 5 agent-pipeline subagent definitions
+(planner, builder, reviewer, revisor, publisher), copied unmodified from
+the `agent-pipeline` repo. `skills/skills/` holds the `build-request`
+skill, copied the same way.
 
 ## Install
 
