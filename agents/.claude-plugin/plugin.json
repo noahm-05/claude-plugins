@@ -1,0 +1,9 @@
+{
+  "name": "agents",
+  "version": "0.1.0",
+  "description": "Noah's custom Claude Code subagents.",
+  "author": {
+    "name": "Noah",
+    "email": "noahrmac@icloud.com"
+  }
+}
