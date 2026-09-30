@@ -1,8 +1,8 @@
 # claude-plugins
 
 A Claude Code plugin marketplace for Noah's own plugins/agents/skills, so
-they can be installed consistently across every dev environment — plus,
-later, references to third-party plugins worth pulling in.
+they can be installed consistently across every dev environment — plus
+references to third-party plugins worth pulling in.
 
 ## Structure
 

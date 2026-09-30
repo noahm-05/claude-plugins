@@ -75,3 +75,12 @@ edit adding the `ponytail`/`i-have-adhd` external-source entries (exact
 content is in plan.md's "New marketplace.json entries" section), or add
 them directly — then re-run this build step (or apply just that one
 edit) and restore the README's third-party-plugins paragraph.
+
+## Addendum
+The orchestrating session made the blocked `marketplace.json` edit directly,
+in commit `2d4a4cb`, adding the `ponytail` and `i-have-adhd` external-source
+entries exactly as specified in plan.md. The README's third-party-plugins
+paragraph was restored in the same commit. The acceptance check above now
+passes in full for the `marketplace.json`/`plugin.json` item (previously
+FAIL), leaving only push/`gh repo view` verification out of scope for this
+stage, per plan.md.
