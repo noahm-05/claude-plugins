@@ -1,7 +1,7 @@
 ---
 name: reviewer
 description: Reviews the builder's diff for over-engineering, correctness, security, and spec compliance. Use after the builder finishes, before publishing.
-tools: Read, Grep, Glob, Bash
+tools: Read, Write, Grep, Glob, Bash
 model: sonnet
 skills:
   - ponytail

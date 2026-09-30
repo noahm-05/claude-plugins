@@ -1,7 +1,7 @@
 ---
 name: planner
 description: Breaks a confirmed spec.md into a concrete file/task plan before any code is written. Use at the start of every build or revision in the agent pipeline, immediately after spec.md is confirmed.
-tools: Read, Grep, Glob
+tools: Read, Write, Grep, Glob
 model: sonnet
 ---
 
