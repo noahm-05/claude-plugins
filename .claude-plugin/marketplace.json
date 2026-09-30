@@ -14,6 +14,16 @@
       "name": "skills",
       "source": "./skills",
       "description": "Noah's custom Claude Code skills."
+    },
+    {
+      "name": "ponytail",
+      "source": { "source": "url", "url": "https://github.com/DietrichGebert/ponytail.git" },
+      "description": "Lazy senior dev mode. Forces the simplest, shortest solution that actually works: YAGNI, stdlib first, no unrequested abstractions."
+    },
+    {
+      "name": "i-have-adhd",
+      "source": { "source": "url", "url": "https://github.com/ayghri/i-have-adhd.git" },
+      "description": "Shape Claude Code output for an ADHD reader: lead with the next action, number steps, suppress tangents, restate state, make wins visible."
     }
   ]
 }

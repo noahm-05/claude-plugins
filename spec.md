@@ -6,12 +6,13 @@ plugin marketplace, so Noah can install his own plugins/agents/skills — and
 references to third-party ones — consistently across every dev environment.
 
 ## Inputs / Outputs
-- Inputs: none at scaffold time. Follow-up revisions will add Noah's own
-  plugin content (e.g. the agents-pipeline setup) and marketplace entries
-  pointing at externally-published plugins on GitHub.
-- Outputs: a git repo structured per Anthropic's Claude Code plugin
-  marketplace spec — root `.claude-plugin/marketplace.json`, with each
-  plugin as its own top-level directory containing a `.claude-plugin/plugin.json`.
+- Inputs: the `agent-pipeline` repo's own `.claude/agents/*.md` (planner,
+  builder, reviewer, revisor, publisher) and `.claude/skills/build-request/`.
+- Outputs: those files copied into `agents/agents/` and `skills/skills/`
+  respectively, plus two new marketplace entries for `ponytail`
+  (github.com/DietrichGebert/ponytail) and `i-have-adhd`
+  (github.com/ayghri/i-have-adhd) — referenced by external git source, not
+  copied, since they're published plugins Noah installs from elsewhere.
 
 ## Environment
 GitHub-hosted, private, personal account (noahm-05). No server or runtime —
@@ -26,11 +27,11 @@ Git repo / Claude Code plugin marketplace, added and installed from via the
 `/plugin` command family.
 
 ## Out of scope
-- Migrating Noah's existing agents/skills content into the plugins —
-  scaffold only, content comes in a follow-up revision.
-- Adding actual external plugin references — follow-up revision once Noah
-  picks which ones.
+- Any content beyond agent-pipeline's agents/build-request skill and the
+  two named external plugins — no other repos' agents/skills go in yet.
 - Any CI, web UI, or publishing automation.
+- Copying ponytail/i-have-adhd's actual source — they stay external
+  references so they still auto-update from their own repos.
 
 ## Scaffold structure
 ```
@@ -55,7 +56,13 @@ way later without restructuring.
 
 ## Acceptance check
 - `.claude-plugin/marketplace.json` and both `plugin.json` files are valid
-  JSON and match the required marketplace/plugin schema fields.
+  JSON and match the required marketplace/plugin schema fields, including
+  the two new external-source entries (`{"source": "url", "url": "..."}`
+  form, matching the schema used by real marketplace.json examples on
+  this machine).
+- The 5 agent `.md` files and `build-request/SKILL.md` are present under
+  `agents/agents/` and `skills/skills/build-request/` with valid
+  frontmatter, unmodified from agent-pipeline's originals.
 - Repo pushed to GitHub as private under noahm-05.
 - `gh repo view noahm-05/claude-plugins` confirms it exists and is private.
 

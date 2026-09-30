@@ -30,6 +30,14 @@ the same way later without restructuring.
 the `agent-pipeline` repo. `skills/skills/` holds the `build-request`
 skill, copied the same way.
 
+`marketplace.json` also lists two external plugins Noah depends on, each
+referenced by its own GitHub source rather than copied in, so they keep
+auto-updating from upstream:
+- [`ponytail`](https://github.com/DietrichGebert/ponytail) — lazy senior
+  dev mode
+- [`i-have-adhd`](https://github.com/ayghri/i-have-adhd) — ADHD-friendly
+  output shaping
+
 ## Install
 
 ```
@@ -41,4 +49,6 @@ Then install whichever plugin(s) you need:
 ```
 /plugin install agents@claude-plugins
 /plugin install skills@claude-plugins
+/plugin install ponytail@claude-plugins
+/plugin install i-have-adhd@claude-plugins
 ```
