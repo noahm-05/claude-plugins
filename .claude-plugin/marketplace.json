@@ -1,0 +1,19 @@
+{
+  "name": "claude-plugins",
+  "owner": {
+    "name": "Noah",
+    "email": "noahrmac@icloud.com"
+  },
+  "plugins": [
+    {
+      "name": "agents",
+      "source": "./agents",
+      "description": "Noah's custom Claude Code subagents."
+    },
+    {
+      "name": "skills",
+      "source": "./skills",
+      "description": "Noah's custom Claude Code skills."
+    }
+  ]
+}
