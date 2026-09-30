@@ -68,3 +68,4 @@ way later without restructuring.
 
 ## Revision history
 - 2026-09-30: Initial scaffold build (agents/skills plugin dirs, marketplace.json). Pushed to https://github.com/noahm-05/claude-plugins (private). Tag: v1.
+- 2026-09-30: Added agent-pipeline's 5 agents and build-request skill into agents/agents/ and skills/skills/, plus ponytail and i-have-adhd as external marketplace entries. Tag: v2.
